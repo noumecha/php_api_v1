@@ -37,6 +37,10 @@
             $id = intval($_GET["id"]);
             updateProduct($id);
             break;
+        case 'DELETE':
+            $id = intval($_GET["id"]);
+            deleteProduct($id);
+            break;
         default:
             # requete invalide : 
             header("HTTP/1.0 405 Method Not Allowed");
@@ -176,4 +180,31 @@
         header('Conten-Type: application/json');
         echo json_encode($response);
 
+    }
+
+    /**
+     * fonction pour supprimer un produit de la bd 
+     * $_DELETE
+     */
+    function deleteProduct($id)
+    {
+        global $con_sqli;
+        $query = "DELETE FROM produit WHERE id=".$id;
+
+        if ($con_sqli->query($query))
+        {
+            $response= array(
+                'status'=> 1, 
+                'status_message'=>'produit supprimé avec succès.'
+            );
+        }
+        else
+        {
+            $response = array(
+                'status' => 0,
+                'status_message' => 'echec de la surpression du produit'
+            );
+        }
+        header('Conten-Type: application/json');
+        echo json_encode($response);
     }

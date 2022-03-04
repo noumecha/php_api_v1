@@ -33,6 +33,10 @@
         case 'POST':
             addProduct();
             break;
+        case 'PUT':
+            $id = intval($_GET["id"]);
+            updateProduct($id);
+            break;
         default:
             # requete invalide : 
             header("HTTP/1.0 405 Method Not Allowed");
@@ -135,6 +139,41 @@
             $response = array('status'=>0, 'status_message'=> 'ERREUR!.'. mysqli_error($con_sqli));
         }
         header('Content-Type: application/json');
+        echo json_encode($response);
+
+    }
+
+    /**
+     * 
+     * fonction pour la maj d'n produit à partir de son id
+     * PHP n'a pas de var global $_PUT , on utilisera don les flux d'entrée:
+     * input stream 'php://input' 
+     */
+    function updateProduct($id)
+    {
+
+        global $con_sqli;
+        $_PUT = array(); // tableau qui contiendra les data
+
+        parse_str(file_get_contents('php://input'), $_PUT);
+        $name = $_PUT["name"];
+        $description = $_PUT["description"];
+        $price = $_PUT["price"];
+        $category = $_PUT["category"];
+        $modified = date('Y-m-d H:i:s');
+
+        # requete de d'update : 
+        $query = "UPDATE produit SET name='".$name."', description ='".$description."', price='".$price."', category_id='".$category."', modified='".$modified."' WHERE id=".$id;
+
+        if ($con_sqli->query($query))
+        {
+            $response = array('status'=>1, 'status_message'=>'Produit mis a jour');
+        }        
+        else 
+        {
+            $response = array('status'=>0, 'status_message'=>'Echec de la mise à jour du produit.'.mysqli_error($con_sqli));
+        }
+        header('Conten-Type: application/json');
         echo json_encode($response);
 
     }

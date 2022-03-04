@@ -1,2 +1,0 @@
-[Fri Mar 04 13:42:03.258139 2022] [php7:notice] [pid 9715] [client 127.0.0.1:51784] PHP Notice:  Undefined variable: mysqli_connect in /home/noumel/Codes/php/api/login.php on line 36
-[Fri Mar 04 13:42:03.258772 2022] [php7:error] [pid 9715] [client 127.0.0.1:51784] PHP Fatal error:  Uncaught Error: Function name must be a string in /home/noumel/Codes/php/api/login.php:36\nStack trace:\n#0 /home/noumel/Codes/php/api/produits.php(10): require_once()\n#1 {main}\n  thrown in /home/noumel/Codes/php/api/login.php on line 36

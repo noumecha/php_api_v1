@@ -33,7 +33,7 @@
 	 * mysqli_close : pour fermener la connection à la bd 
 	 */
 
-	$con_sqli = $mysqli_connect($db_hn,$db_usr,$db_pwd,$db_name);
+	$con_sqli = mysqli_connect($db_hn,$db_usr,$db_pwd,$db_name);
 
 	/**
 	 * 

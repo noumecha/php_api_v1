@@ -9,21 +9,9 @@
 # fichier de connection à la bd : 
     require_once 'login.php';
 
-    # test de connection : 
-
-    if ($con_sqli)
-        echo "well";
-    else
-        echo "bad";
-
     # la méthode utiliser :
 
     $request_method = $_SERVER["REQUEST_METHOD"];
-
-    # test ici 
-    
-    echo "bonjour";
-    echo $request_method;
 
     # en fonction de l améthode : 
 

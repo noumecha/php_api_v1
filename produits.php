@@ -34,7 +34,7 @@
             {
                 # recupération d'un seul id :
                 $id = intval($_GET["id"]);
-                getProducts($id);
+                getProduct($id);
             } 
             else 
             {
@@ -78,5 +78,41 @@
 
         }
 
+
+    }
+
+    /**
+     * cette fonction permet de recuperer un produit 
+     * en fonction de son id 
+     * @author : the tmc 
+     */
+
+    function getProduct($id=0)
+    {
+
+        global $con_sqli;
+        $query = "SELECT * From produit";
+        if($id!=0)
+        {
+            $query .= " WHERE id=".$id." LIMIT 1";
+        }
+
+        $response = array();
+        $result = $con_sqli->query($query);
+
+        try {
+
+            while($row = mysqli_fetch_array($result))
+            {
+                $response[] = $row;
+            }
+            header('Conten-Type: application/json');
+            echo json_encode($response, JSON_PRETTY_PRINT);
+
+        } catch (\Throwable $th) {
+            
+            echo "erreur de connection : ".$th->getMessage()." ".$th->getCode();
+
+        }
 
     }

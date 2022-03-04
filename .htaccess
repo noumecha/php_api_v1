@@ -1,0 +1,5 @@
+RewriteEngine On #Activation du module Rewrite
+RewriteRule ^produits/?$ produits.php [NC,L]
+RewriteRule ^[^/]+/(\d+)$ produits.php?id=$1
+
+# ce fichier nous permet de définier nos routes dans notre api

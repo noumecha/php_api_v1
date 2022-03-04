@@ -30,6 +30,9 @@
                 getProducts();
             }
             break;
+        case 'POST':
+            addProduct();
+            break;
         default:
             # requete invalide : 
             header("HTTP/1.0 405 Method Not Allowed");
@@ -102,5 +105,36 @@
             echo "erreur de connection : ".$th->getMessage()." ".$th->getCode();
 
         }
+
+    }
+
+    /**
+     * 
+     * function pour la creation d'un nouvel enregistrement dans
+     * la bd 
+     */
+    function addProduct()
+    {
+
+        global $con_sqli;
+        $name = $_POST["name"];
+        $description = $_POST["description"];
+        $price = $_POST["price"];
+        $category = $_POST["category"];
+        $created = date('Y-m-d H:i:s');
+        $modified = date('Y-m-d H:i:s');
+
+        echo $query = "INSERT INTO produit(name,description,price, category_id,created,modified) VALUES ('".$name."','".$description."','".$price."','".$category."','".$created."','".$modified."')";
+
+        if ($con_sqli->query($query))
+        {
+            $response = array('status'=> 1, 'status_message'=>'Produit ajouté avec succès.');
+        }
+        else
+        {
+            $response = array('status'=>0, 'status_message'=> 'ERREUR!.'. mysqli_error($con_sqli));
+        }
+        header('Content-Type: application/json');
+        echo json_encode($response);
 
     }

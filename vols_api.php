@@ -1,4 +1,8 @@
 <?php 
+
+    // for displaying error : 
+    ini_set('display_errors',1);
+    error_reporting(E_ALL);
 /**
  * ce fichier correspond à un simple test d'api 
  * just for the fun 
@@ -23,7 +27,8 @@
     }
 
     // requete de pour recupere les information de la bd vols: 
-    $req = $con_pdo->prepare("SELECT * FROM vols;");
+    $query = "SELECT * FROM `vols` LIMIT 50"; 
+    $req = $con_pdo->prepare($query);
     try 
     {
         $req->execute();

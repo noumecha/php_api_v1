@@ -9,7 +9,7 @@
      * @author : the tmc
      */
     # appel de notre classe :)
-    use \Connect;
+    #use \Connect;
 
     # fichier requis : 
     require_once 'Connect.php';
@@ -18,11 +18,10 @@
     #$con = new Connect();
 
     # test : 
-    $idCategories = $_GET["idCategories"];
-    $sql = "SELECT * FROM formations WHERE categoriesid=? ORDER BY competence ASC";
+    $sql = "SELECT * FROM categories";
 
     $query = $connect->prepare($sql);
-    $query->execute(array($idCategories));
+    $query->execute();
     $all_user_info = $query->fetchAll(PDO::FETCH_ASSOC);
 
     echo(json_encode($all_user_info));

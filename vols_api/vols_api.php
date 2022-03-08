@@ -11,7 +11,7 @@
     header('Content-Type: application/json');
 
     // import : 
-    require_once('login.php');
+    require_once('../login.php');
 
     // connection à la bd : 
     try
@@ -36,7 +36,7 @@
     }
 
     // retrour des infos en fin d'execution 
-    $results = $req->fetchAll();
+    $results = $req->fetchAll(PDO::FETCH_ASSOC);
     try 
     {
         $req->execute();

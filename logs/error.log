@@ -94,3 +94,8 @@
 [Tue Mar 08 13:50:50.377464 2022] [php7:warn] [pid 2197] [client 127.0.0.1:41072] PHP Warning:  The use statement with non-compound name 'Connect' has no effect in /home/noumel/Codes/php/api/first_api/formations_api.php on line 12
 [Tue Mar 08 13:50:50.377929 2022] [php7:notice] [pid 2197] [client 127.0.0.1:41072] PHP Notice:  Undefined index: idCategories in /home/noumel/Codes/php/api/first_api/formations_api.php on line 21
 [Tue Mar 08 13:51:28.578169 2022] [php7:notice] [pid 2198] [client 127.0.0.1:41074] PHP Notice:  Undefined index: idCategories in /home/noumel/Codes/php/api/first_api/formations_api.php on line 21
+[Tue Mar 08 13:59:29.728862 2022] [php7:error] [pid 17001] [client 127.0.0.1:41076] script '/var/www/html/api/vols_api.php' not found or unable to stat
+[Tue Mar 08 13:59:40.841291 2022] [php7:warn] [pid 2194] [client 127.0.0.1:41078] PHP Warning:  require_once(login.php): failed to open stream: No such file or directory in /home/noumel/Codes/php/api/vols_api/vols_api.php on line 14
+[Tue Mar 08 13:59:40.841338 2022] [php7:error] [pid 2194] [client 127.0.0.1:41078] PHP Fatal error:  require_once(): Failed opening required 'login.php' (include_path='.:/usr/share/php') in /home/noumel/Codes/php/api/vols_api/vols_api.php on line 14
+[Tue Mar 08 14:02:26.375289 2022] [php7:warn] [pid 2195] [client 127.0.0.1:41086] PHP Warning:  require_once(login.php): failed to open stream: No such file or directory in /home/noumel/Codes/php/api/vols_api/vols_api.php on line 14
+[Tue Mar 08 14:02:26.375372 2022] [php7:error] [pid 2195] [client 127.0.0.1:41086] PHP Fatal error:  require_once(): Failed opening required 'login.php' (include_path='.:/usr/share/php') in /home/noumel/Codes/php/api/vols_api/vols_api.php on line 14

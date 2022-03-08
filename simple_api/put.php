@@ -6,7 +6,7 @@
  *  @author : the tmc 
  */
 
- $url = "http://api.nml/produits/5"; # modifier le produit 1 
+ $url = "http://api.nml/simple_api/produits/5"; # modifier le produit 1 
  $data = array(
      'name' => 'Basket',
      'description' => 'shoes for player',

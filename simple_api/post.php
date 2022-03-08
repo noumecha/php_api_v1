@@ -6,7 +6,7 @@
  *  @author : the tmc 
  */
 
-$url = 'http://api.nml/produits';
+$url = 'http://api.nml/simple_api/produits';
 $data = array(
     'name' => 'Car',
     'description' => 'Ferrari 90',

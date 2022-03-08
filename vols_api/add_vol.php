@@ -11,7 +11,7 @@
     header('Content-Type: application/json');
 
     // import : 
-    require_once('login.php');
+    require_once('../login.php');
 
     // connection à la bd : 
     try

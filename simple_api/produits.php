@@ -7,7 +7,7 @@
  */
 
 # fichier de connection à la bd : 
-    require_once 'login.php';
+    require_once '../login.php';
 
     # la méthode utiliser :
 

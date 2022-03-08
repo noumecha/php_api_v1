@@ -238,3 +238,8 @@
 127.0.0.1 - - [08/Mar/2022:13:18:07 +0100] "POST /produits.php HTTP/1.1" 404 486 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36"
 127.0.0.1 - - [08/Mar/2022:13:18:19 +0100] "POST /simple_api/produits.php HTTP/1.1" 200 451 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36"
 127.0.0.1 - - [08/Mar/2022:13:18:51 +0100] "GET /simple_api/produits.php HTTP/1.1" 200 2253 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36"
+127.0.0.1 - - [08/Mar/2022:13:49:49 +0100] "GET /first_api/categories.php HTTP/1.1" 200 320 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36"
+127.0.0.1 - - [08/Mar/2022:13:50:31 +0100] "GET /first_api/formations.php HTTP/1.1" 404 486 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36"
+127.0.0.1 - - [08/Mar/2022:13:50:41 +0100] "GET /first_api/formation_api.php HTTP/1.1" 404 486 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36"
+127.0.0.1 - - [08/Mar/2022:13:50:50 +0100] "GET /first_api/formations_api.php HTTP/1.1" 200 244 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36"
+127.0.0.1 - - [08/Mar/2022:13:51:28 +0100] "GET /first_api/formations_api.php HTTP/1.1" 200 244 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36"

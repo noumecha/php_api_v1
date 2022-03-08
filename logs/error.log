@@ -83,3 +83,8 @@
 [Tue Mar 08 11:59:49.623724 2022] [php7:notice] [pid 2195] [client 127.0.0.1:41008] PHP Notice:  Trying to access array offset on value of type null in /home/noumel/Codes/php/api/add_vol.php on line 31
 [Tue Mar 08 11:59:49.836775 2022] [php7:notice] [pid 2195] [client 127.0.0.1:41008] PHP Notice:  Undefined variable: reults in /home/noumel/Codes/php/api/add_vol.php on line 31
 [Tue Mar 08 11:59:49.836820 2022] [php7:notice] [pid 2195] [client 127.0.0.1:41008] PHP Notice:  Trying to access array offset on value of type null in /home/noumel/Codes/php/api/add_vol.php on line 31
+[Tue Mar 08 13:18:07.478790 2022] [php7:error] [pid 2198] [client 127.0.0.1:41056] script '/var/www/html/api/produits.php' not found or unable to stat
+[Tue Mar 08 13:18:19.157702 2022] [php7:notice] [pid 17001] [client 127.0.0.1:41058] PHP Notice:  Undefined index: name in /home/noumel/Codes/php/api/simple_api/produits.php on line 128
+[Tue Mar 08 13:18:19.157758 2022] [php7:notice] [pid 17001] [client 127.0.0.1:41058] PHP Notice:  Undefined index: description in /home/noumel/Codes/php/api/simple_api/produits.php on line 129
+[Tue Mar 08 13:18:19.157769 2022] [php7:notice] [pid 17001] [client 127.0.0.1:41058] PHP Notice:  Undefined index: price in /home/noumel/Codes/php/api/simple_api/produits.php on line 130
+[Tue Mar 08 13:18:19.157793 2022] [php7:notice] [pid 17001] [client 127.0.0.1:41058] PHP Notice:  Undefined index: category in /home/noumel/Codes/php/api/simple_api/produits.php on line 131

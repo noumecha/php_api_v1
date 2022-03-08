@@ -55,3 +55,31 @@
 [Tue Mar 08 07:59:04.753016 2022] [php7:error] [pid 5464] [client 127.0.0.1:47836] PHP Fatal error:  Uncaught Error: Call to a member function fetc() on bool in /home/noumel/Codes/php/api/vols_api.php:35\nStack trace:\n#0 {main}\n  thrown in /home/noumel/Codes/php/api/vols_api.php on line 35
 [Tue Mar 08 07:59:25.592614 2022] [php7:error] [pid 2473] [client 127.0.0.1:47838] PHP Fatal error:  Uncaught Error: Call to a member function fetch() on bool in /home/noumel/Codes/php/api/vols_api.php:35\nStack trace:\n#0 {main}\n  thrown in /home/noumel/Codes/php/api/vols_api.php on line 35
 [Tue Mar 08 08:00:50.512027 2022] [php7:error] [pid 2472] [client 127.0.0.1:47840] PHP Fatal error:  Uncaught Error: Call to a member function fetchAll() on bool in /home/noumel/Codes/php/api/vols_api.php:35\nStack trace:\n#0 {main}\n  thrown in /home/noumel/Codes/php/api/vols_api.php on line 35
+[Tue Mar 08 11:58:54.276350 2022] [php7:notice] [pid 2197] [client 127.0.0.1:41002] PHP Notice:  Undefined variable: reults in /home/noumel/Codes/php/api/add_vol.php on line 31
+[Tue Mar 08 11:58:54.276409 2022] [php7:notice] [pid 2197] [client 127.0.0.1:41002] PHP Notice:  Trying to access array offset on value of type null in /home/noumel/Codes/php/api/add_vol.php on line 31
+[Tue Mar 08 11:58:55.897036 2022] [php7:notice] [pid 2197] [client 127.0.0.1:41002] PHP Notice:  Undefined variable: reults in /home/noumel/Codes/php/api/add_vol.php on line 31
+[Tue Mar 08 11:58:55.897104 2022] [php7:notice] [pid 2197] [client 127.0.0.1:41002] PHP Notice:  Trying to access array offset on value of type null in /home/noumel/Codes/php/api/add_vol.php on line 31
+[Tue Mar 08 11:58:56.458234 2022] [php7:notice] [pid 2197] [client 127.0.0.1:41002] PHP Notice:  Undefined variable: reults in /home/noumel/Codes/php/api/add_vol.php on line 31
+[Tue Mar 08 11:58:56.458283 2022] [php7:notice] [pid 2197] [client 127.0.0.1:41002] PHP Notice:  Trying to access array offset on value of type null in /home/noumel/Codes/php/api/add_vol.php on line 31
+[Tue Mar 08 11:58:56.702055 2022] [php7:notice] [pid 2197] [client 127.0.0.1:41002] PHP Notice:  Undefined variable: reults in /home/noumel/Codes/php/api/add_vol.php on line 31
+[Tue Mar 08 11:58:56.702099 2022] [php7:notice] [pid 2197] [client 127.0.0.1:41002] PHP Notice:  Trying to access array offset on value of type null in /home/noumel/Codes/php/api/add_vol.php on line 31
+[Tue Mar 08 11:59:14.747673 2022] [php7:notice] [pid 2198] [client 127.0.0.1:41004] PHP Notice:  Undefined offset: 0 in /home/noumel/Codes/php/api/add_vol.php on line 31
+[Tue Mar 08 11:59:14.747745 2022] [php7:notice] [pid 2198] [client 127.0.0.1:41004] PHP Notice:  Undefined variable: reults in /home/noumel/Codes/php/api/add_vol.php on line 31
+[Tue Mar 08 11:59:14.747758 2022] [php7:notice] [pid 2198] [client 127.0.0.1:41004] PHP Notice:  Trying to access array offset on value of type null in /home/noumel/Codes/php/api/add_vol.php on line 31
+[Tue Mar 08 11:59:15.445906 2022] [php7:notice] [pid 2198] [client 127.0.0.1:41004] PHP Notice:  Undefined offset: 0 in /home/noumel/Codes/php/api/add_vol.php on line 31
+[Tue Mar 08 11:59:15.445949 2022] [php7:notice] [pid 2198] [client 127.0.0.1:41004] PHP Notice:  Undefined variable: reults in /home/noumel/Codes/php/api/add_vol.php on line 31
+[Tue Mar 08 11:59:15.445957 2022] [php7:notice] [pid 2198] [client 127.0.0.1:41004] PHP Notice:  Trying to access array offset on value of type null in /home/noumel/Codes/php/api/add_vol.php on line 31
+[Tue Mar 08 11:59:15.621022 2022] [php7:notice] [pid 2198] [client 127.0.0.1:41004] PHP Notice:  Undefined offset: 0 in /home/noumel/Codes/php/api/add_vol.php on line 31
+[Tue Mar 08 11:59:15.621075 2022] [php7:notice] [pid 2198] [client 127.0.0.1:41004] PHP Notice:  Undefined variable: reults in /home/noumel/Codes/php/api/add_vol.php on line 31
+[Tue Mar 08 11:59:15.621085 2022] [php7:notice] [pid 2198] [client 127.0.0.1:41004] PHP Notice:  Trying to access array offset on value of type null in /home/noumel/Codes/php/api/add_vol.php on line 31
+[Tue Mar 08 11:59:15.868280 2022] [php7:notice] [pid 2198] [client 127.0.0.1:41004] PHP Notice:  Undefined offset: 0 in /home/noumel/Codes/php/api/add_vol.php on line 31
+[Tue Mar 08 11:59:15.868418 2022] [php7:notice] [pid 2198] [client 127.0.0.1:41004] PHP Notice:  Undefined variable: reults in /home/noumel/Codes/php/api/add_vol.php on line 31
+[Tue Mar 08 11:59:15.868459 2022] [php7:notice] [pid 2198] [client 127.0.0.1:41004] PHP Notice:  Trying to access array offset on value of type null in /home/noumel/Codes/php/api/add_vol.php on line 31
+[Tue Mar 08 11:59:48.489744 2022] [php7:notice] [pid 2195] [client 127.0.0.1:41008] PHP Notice:  Undefined variable: reults in /home/noumel/Codes/php/api/add_vol.php on line 31
+[Tue Mar 08 11:59:48.489841 2022] [php7:notice] [pid 2195] [client 127.0.0.1:41008] PHP Notice:  Trying to access array offset on value of type null in /home/noumel/Codes/php/api/add_vol.php on line 31
+[Tue Mar 08 11:59:49.393012 2022] [php7:notice] [pid 2195] [client 127.0.0.1:41008] PHP Notice:  Undefined variable: reults in /home/noumel/Codes/php/api/add_vol.php on line 31
+[Tue Mar 08 11:59:49.393068 2022] [php7:notice] [pid 2195] [client 127.0.0.1:41008] PHP Notice:  Trying to access array offset on value of type null in /home/noumel/Codes/php/api/add_vol.php on line 31
+[Tue Mar 08 11:59:49.623676 2022] [php7:notice] [pid 2195] [client 127.0.0.1:41008] PHP Notice:  Undefined variable: reults in /home/noumel/Codes/php/api/add_vol.php on line 31
+[Tue Mar 08 11:59:49.623724 2022] [php7:notice] [pid 2195] [client 127.0.0.1:41008] PHP Notice:  Trying to access array offset on value of type null in /home/noumel/Codes/php/api/add_vol.php on line 31
+[Tue Mar 08 11:59:49.836775 2022] [php7:notice] [pid 2195] [client 127.0.0.1:41008] PHP Notice:  Undefined variable: reults in /home/noumel/Codes/php/api/add_vol.php on line 31
+[Tue Mar 08 11:59:49.836820 2022] [php7:notice] [pid 2195] [client 127.0.0.1:41008] PHP Notice:  Trying to access array offset on value of type null in /home/noumel/Codes/php/api/add_vol.php on line 31

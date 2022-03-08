@@ -161,3 +161,6 @@
 127.0.0.1 - - [08/Mar/2022:08:03:48 +0100] "GET /vols_api.php HTTP/1.1" 200 268 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36"
 127.0.0.1 - - [08/Mar/2022:08:03:48 +0100] "GET /vols_api.php HTTP/1.1" 200 268 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36"
 127.0.0.1 - - [08/Mar/2022:09:14:18 +0100] "GET /vols_api.php HTTP/1.1" 200 269 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:91.0) Gecko/20100101 Firefox/91.0"
+127.0.0.1 - - [08/Mar/2022:09:38:32 +0100] "GET /favicon.ico HTTP/1.1" 404 486 "http://api.nml/vols_api.php" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36"
+127.0.0.1 - - [08/Mar/2022:09:39:03 +0100] "GET /vols_api.php?ville_depart=yaounde HTTP/1.1" 200 276 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36"
+127.0.0.1 - - [08/Mar/2022:09:40:01 +0100] "POST /vols_api.php HTTP/1.1" 200 276 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36"

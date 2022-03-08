@@ -25,21 +25,29 @@
         $retour["success"] = false;
         $retour["message"] = "Connexion à la base de donnée impossible";
     }
+    // avec un post pour le tri : 
+    if (!empty($_POST["ville_depart"])) {
+        $req = $con_pdo->prepare("SELECT * FROM vols WHERE ville_depart LIKE :v");
+        $req->bindParam(':v', $_POST["ville_depart"]);
+        $req->execute();
+    } else {
+        $req = $con_pdo->prepare("SELECT * FROM vols");
+        $req->execute();
+    }
 
-    // requete de pour recupere les information de la bd vols: 
-    $query = "SELECT * FROM `vols` LIMIT 50"; 
-    $req = $con_pdo->prepare($query);
+    // retrour des infos en fin d'execution 
+    $results = $req->fetchAll();
     try 
     {
         $req->execute();
         $retour["success"] = true;
         $retour["message"] = "Voici les vols en cours : ";
-        $retour["res"]["vols"] = $req->fetchAll();
+        $retour["res"]["nb"] = count($results);
+        $retour["res"]["vols"] = $results;
     } 
     catch (Exception $e) 
     {
         echo "Erreur : ".$e->getMessage()." code erreur : ".$e->getCode();
     }
-
-    // retoor des informations à la fin : 
+    # formatage en json : 
     echo json_encode($retour);

@@ -68,7 +68,7 @@
             {
                 $response[] = $row;
             }
-            header('Conten-Type: application/json');
+            header('Content-Type: application/json');
             echo json_encode($response, JSON_PRETTY_PRINT);
 
         } catch (\Throwable $th) {

@@ -4,7 +4,7 @@
  * @author : the tmc
  */
 
-   //$connect = new PDO("mysql:host=adminer.skr; dbname=tmc_test",'root','root');
+   $connect = new PDO("mysql:host=adminer.skr; dbname=tmc_test",'root','root');
 
    use PDO;
    

@@ -121,3 +121,10 @@
 [Wed Mar 09 05:32:24.316170 2022] [php7:notice] [pid 3379] [client 127.0.0.1:32818] PHP Notice:  Trying to access array offset on value of type bool in /home/noumel/Codes/php/api/api_jwt/api/login.php on line 56
 [Wed Mar 09 05:32:24.316181 2022] [php7:notice] [pid 3379] [client 127.0.0.1:32818] PHP Notice:  Trying to access array offset on value of type bool in /home/noumel/Codes/php/api/api_jwt/api/login.php on line 57
 [Wed Mar 09 05:32:24.316190 2022] [php7:notice] [pid 3379] [client 127.0.0.1:32818] PHP Notice:  Trying to access array offset on value of type bool in /home/noumel/Codes/php/api/api_jwt/api/login.php on line 58
+[Wed Mar 09 05:34:33.929668 2022] [php7:notice] [pid 3380] [client 127.0.0.1:32820] PHP Notice:  Undefined index: password in /home/noumel/Codes/php/api/api_jwt/api/login.php on line 58
+[Wed Mar 09 05:35:05.851823 2022] [php7:notice] [pid 2375] [client 127.0.0.1:32822] PHP Notice:  Undefined index: password in /home/noumel/Codes/php/api/api_jwt/api/login.php on line 58
+[Wed Mar 09 05:46:56.965438 2022] [php7:notice] [pid 3376] [client 127.0.0.1:32832] PHP Notice:  Undefined index: password in /home/noumel/Codes/php/api/api_jwt/api/login.php on line 62
+[Wed Mar 09 05:48:38.894372 2022] [php7:notice] [pid 3380] [client 127.0.0.1:32836] PHP Notice:  Undefined property: stdClass::$first_name in /home/noumel/Codes/php/api/api_jwt/api/register.php on line 32
+[Wed Mar 09 05:48:38.894491 2022] [php7:notice] [pid 3380] [client 127.0.0.1:32836] PHP Notice:  Undefined property: stdClass::$last_name in /home/noumel/Codes/php/api/api_jwt/api/register.php on line 33
+[Wed Mar 09 05:48:56.475233 2022] [php7:notice] [pid 2375] [client 127.0.0.1:32838] PHP Notice:  Undefined index: password in /home/noumel/Codes/php/api/api_jwt/api/login.php on line 62
+[Wed Mar 09 06:11:29.715151 2022] [php7:notice] [pid 2374] [client 127.0.0.1:32840] PHP Notice:  Undefined index: password in /home/noumel/Codes/php/api/api_jwt/api/login.php on line 62

@@ -31,12 +31,16 @@ $password = $data->password;
 
 $table_name = 'Users';
 
-$query = "SELECT id, first_name, last_name, password_usr FROM " . $table_name . " WHERE email = ? LIMIT 0,1";
 
-$stmt = $conn->prepare($query);
-$stmt->bindParam(1, $email);
-$stmt->execute();
-$num = $stmt->rowCount();
+try {
+    $query = "SELECT id, first_name, last_name, password_usr FROM " . $table_name . " WHERE email = ? LIMIT 0,1";
+    $stmt = $conn->prepare($query);
+    $stmt->bindParam(1, $email);
+    $stmt->execute();
+    $num = $stmt->rowCount();
+} catch (PDOException $ex) {
+    echo "Erreur lors de la selection des données , erreur : ". $ex->getMessage();
+}
 
 # single test : 
 
@@ -80,7 +84,7 @@ if($num > 0)
             );
         http_response_code(200);
 
-        $jwt = JWT::encode($token, $secret_key,'HS256');
+        $jwt = JWT::encode($token, $secret_key,null);
         echo json_encode(
             array(
                 "message" => "connection reussi",
@@ -89,6 +93,12 @@ if($num > 0)
                 "expireAt" => $expire_claim
             )
             );
+        /**
+         * 
+         * le jeton jwt creer doit etre conservé dans le stockage local du brwoser
+         * ou dans les cookies à l'aide de javascript puis attaché à chaque requete HTTP 
+         * envoyée pour accéder à une ressource protégé sur le serveur php.
+         */
     }
     else
     {

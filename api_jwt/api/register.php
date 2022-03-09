@@ -38,7 +38,7 @@ $table_name = 'Users';
 
 # debut du code : 
 
-$query = "INSERT INTO ". $table_name . " SET first_name = :firstname, last_name = :lastname, email = :email, password = :password";
+$query = "INSERT INTO ". $table_name . " SET first_name = :firstname, last_name = :lastname, email = :email, password_usr = :password";
 $stmt = $conn->prepare($query);
 
 $stmt->bindParam(':firstname', $firstName);
@@ -52,10 +52,20 @@ $stmt->bindParam(':password',$password_hash);
 if($stmt->execute())
 {
     http_response_code(200);
-    echo json_encode(array("message"=>"L'utilisateur a bien été enregistré."));
+    echo json_encode(
+        array(
+            "statut" => "200",
+            "message" => "L'utilisateur a bien été enregistré."
+        )
+    );
 }
 else
 {
     http_response_code(400);
-    echo json_encode(array("message"=>"Impossible d'enregistrer l'utilisateur"));
+    echo json_encode(
+        array(
+            "statut" => "400",
+            "message" => "Impossible d'enregistrer l'utilisateur"
+        )
+    );
 }
